@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Equatorial Weather Trends</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Resources.assets/styles.css">
+        
+    </head>
+
+    <body>
+        <!--Navigation Bar https://getbootstrap.com/docs/4.0/components/navbar/-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index_HEO.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparisons_HEO.html">Plot Comparisons</a>
+              </li>
+              <li>
+                <a class='nav-link' href='table_HEO.html'>Data</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="index_HEO.html">Home</a>
+                    <a href="maxtemp.html">Maximum Temperature</a>
+                    <a href="humidity.html">Humidity</a>
+                    <a href="cloudiness.html">Cloudiness</a>
+                    <a href="windspeed.html">Wind Speed</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+            <!--Navigation Links and Content-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="navbar-nav navbar-right navbar-right-custom">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a> 
+                  <ul class="dropdown-menu>
+                    <li><a href="visualizations/maxtemp.html">Max Temperature</ul>a></li>
+                    <li><a href="visualizations/humidity.html">Humidty</a></li>
+                    <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                    <li><a href="visualizations/windspeed.html">Wind Speed</a></li>
+                  </ul>
+                </li>
+                <li><a> href="comparisons_HEO.html">Compared Plots</a></li>
+                <li><a> href="data_HEO.html">Data</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!--End of Navigation Bar-->
+
+  <!--Main Content-->
+    <!--Containter-->
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="description-content">
+            <h1 class="description-header">How does the weather change the closer you get to the equator?</h1>
+            <hr class="description-hr"/>
+            <img src=assets/images/Fig1.png" alt+"" id+"description-image"/>
+            <p>To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+
+        <!--Visualizations-->
+        <section id="imageNav-area">
+          <div class=imageNav-content">
+            <h2 class=imageNav-header">Latitude vs Weather Aspect</h2>
+            <hr/>
+            <div id="images">
+              <a href="visualizations/maxtemp.html"><img src="assets/images/Fig1.png" alt="Latitude vs. Maximum Temperature" class="imageNav-photo"></a>
+              <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+              <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+              <a href="visualizations/windspeed.html"><img src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+<!--End of Container-->
+
+<!-- Start of footer -->
+  <footer class="footer navbar-fixed-bottom">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright HB 2021
+    </p>
+  </footer>
+<!-- End of footer -->
+
+<!--CDNs-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+</html>
